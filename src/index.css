@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.customColor{
+    color: #FF4137;
+}
+
+.bgCustomColor{
+    background-color: #FF4137;
+}
