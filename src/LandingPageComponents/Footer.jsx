@@ -6,8 +6,8 @@ export default function Footer() {
     <>
        <div className="flex mt-16 gap-5 min-h-[20rem] flex-wrap lg:flex-nowrap">
         <div className="border border-blue-500 rounded-t-md p-5 space-y-5 max-w-full m-5 sm:p-10 lg:max-w-[30rem] lg:m-0">
-          <img src={Logo} alt="DevSphere" className='max-w-[16rem]' />
-          <p className="text-white text-xs sm:text-base">
+          <img src={Logo} alt="DevSphere" className='max-w-[12rem] sm:max-w-[16rem] w-full' />
+          <p className="text-white text-xs sm:text-sm">
             DevSphere excels in software development and data analytics,
             driving digital transformation with innovative solutions across
             diverse industries worldwide.
@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="text-white space-y-5">
               <h2 className="text-base font-semibold sm:text-xl">Get In Touch</h2>
 
-              <ul className="space-y-2 text-xs sm:text-base">
+              <ul className="space-y-2 text-xs sm:text-sm">
                 <li>P.O. Box 11350 Alexandria, VA, 22312</li>
                 <li>info@DevSphere.com</li>
                 <li>support@DevSphere.com</li>
@@ -34,7 +34,7 @@ export default function Footer() {
 
             <div className="text-white space-y-5">
               <h2 className="text-base font-semibold sm:text-xl">Quick Links</h2>
-              <ul className="space-y-2 text-xs sm:text-base">
+              <ul className="space-y-2 text-xs sm:text-sm">
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Our Services</li>
@@ -46,7 +46,7 @@ export default function Footer() {
 
             <div className="text-white space-y-5 hidden sm:block">
               <h2 className="text-xl font-semibold">Popular Links</h2>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-sm">
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Our Services</li>
@@ -57,7 +57,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-center">
-          <a href='/' className="text-white text-xs sm:text-base" >&copy; <span className="underline">DevSphere</span>. All Rights Reserved</a>
+          <a href='/' className="text-white text-xs sm:text-sm" >&copy; <span className="underline">DevSphere</span>. All Rights Reserved</a>
           </div>
         </div>
        

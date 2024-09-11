@@ -19,9 +19,10 @@ export default function CoreTechTab() {
   return (
     <>
       <div className="py-10 text-blue-500">
-        <ul className="flex text-[0.7rem] border border-white rounded-full m-auto max-w-[18rem] sm:m-0  sm:max-w-[34rem] md:max-w-[43.9rem] sm:text-sm md:text-base">
+        <ul className="flex text-[0.7rem] border border-white max-w-[42rem] rounded-full m-auto md:m-0
+         sm:text-sm md:text-base">
           <li
-            className={`py-3 px-2 cursor-pointer rounded-s-full sm:py-3 sm:px-7  md:py-5 md:px-10 ${
+            className={`py-3 px-2 cursor-pointer text-center rounded-s-full flex-1 justify-center sm:py-3 sm:px-7  md:py-5 ${
               tab === 1
                 ? "bg-blue-600 text-white"
                 : "hover:bg-blue-400 text-white"
@@ -31,7 +32,7 @@ export default function CoreTechTab() {
             FrontEnd
           </li>
           <li
-            className={`py-3 px-2 cursor-pointer sm:py-3 sm:px-7  md:py-5 md:px-10 ${
+            className={`py-3 px-2 cursor-pointer text-center flex-1 sm:py-3 sm:px-7  md:py-5 md:px-10 ${
               tab === 2
                 ? "bg-blue-600 text-white"
                 : "hover:bg-blue-400 text-white"
@@ -42,7 +43,7 @@ export default function CoreTechTab() {
           </li>
 
           <li
-            className={`py-3 px-2 cursor-pointer sm:py-3 sm:px-7  md:py-5 md:px-10 ${
+            className={`py-3 px-2 cursor-pointer text-center flex-1 sm:py-3 sm:px-7  md:py-5 md:px-10 ${
               tab === 3
                 ? "bg-blue-600 text-white"
                 : "hover:bg-blue-400 text-white"
@@ -52,7 +53,7 @@ export default function CoreTechTab() {
             Mobile
           </li>
           <li
-            className={`py-3 px-2 cursor-pointer sm:py-3 sm:px-7 md:py-5 md:px-10 ${
+            className={`py-3 px-2 cursor-pointer text-center flex-1 sm:py-3 sm:px-7 md:py-5 md:px-10 ${
               tab === 4
                 ? "bg-blue-600 text-white"
                 : "hover:bg-blue-400 text-white"
@@ -62,7 +63,7 @@ export default function CoreTechTab() {
             DataBase
           </li>
           <li
-            className={`py-3 px-2 cursor-pointer rounded-e-full sm:py-3 sm:px-7 md:py-5 md:px-10 ${
+            className={`py-3 px-2 cursor-pointer text-center flex-1 rounded-e-full sm:py-3 sm:px-7 md:py-5 ${
               tab === 5
                 ? "bg-blue-600 text-white"
                 : "hover:bg-blue-400 text-white"
@@ -77,7 +78,7 @@ export default function CoreTechTab() {
       <div
         className={
           tab === 1
-            ? "flex gap-x-2 justify-center sm:justify-start sm:space-x-10 sm:px-5 sm:py-5"
+            ? "flex gap-x-2 justify-evenly sm:justify-start sm:space-x-10 sm:px-5 sm:py-5"
             : "hidden"
         }
       >
@@ -101,7 +102,7 @@ export default function CoreTechTab() {
       <div
         className={
           tab === 2
-            ? "flex gap-x-2 justify-center sm:justify-start sm:space-x-10 sm:px-5 sm:py-5"
+            ? "flex gap-x-2 justify-evenly  sm:justify-start sm:space-x-10 sm:px-5 sm:py-5"
             : "hidden"
         }
       >
@@ -117,7 +118,7 @@ export default function CoreTechTab() {
       <div
         className={
           tab === 3
-            ? "flex gap-x-2 justify-center sm:justify-start sm:space-x-10 sm:px-5 sm:py-5"
+            ? "flex gap-x-2 justify-evenly  sm:justify-start sm:space-x-10 sm:px-5 sm:py-5"
             : "hidden"
         }
       >
@@ -132,7 +133,7 @@ export default function CoreTechTab() {
       <div
         className={
           tab === 4
-            ? "flex gap-x-2 justify-center sm:justify-start sm:space-x-10 sm:px-5 sm:py-5"
+            ? "flex gap-x-2 justify-evenly  sm:justify-start sm:space-x-10 sm:px-5 sm:py-5"
             : "hidden"
         }
       >
@@ -147,7 +148,7 @@ export default function CoreTechTab() {
       <div
         className={
           tab === 5
-            ? "flex gap-x-2 justify-center sm:justify-start  sm:space-x-10 sm:px-5 sm:py-5"
+            ? "flex gap-x-2 justify-evenly  sm:justify-start  sm:space-x-10 sm:px-5 sm:py-5"
             : "hidden"
         }
       >

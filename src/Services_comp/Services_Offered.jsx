@@ -29,14 +29,14 @@ export default function Services_Offered() {
   return(
     <>  
     {Assets.map((assets, Index) => (
-  <div key={Index} className="flex justify-center flex-wrap pb-20 items-center gap-y-10 xl:gap-y-0 lg:justify-between">
-    <div className="max-w-[45rem] space-y-5 text-center lg:text-start">
-      <h1 className="text-[2rem] font-bold sm:text-[3rem]">{assets.heading}</h1>
-      <p className="text-xs leading-5 sm:text-base">{assets.body}</p>
-      <Link to='/' className="text-blue-500 flex items-center text-sm justify-center lg:justify-normal hover:underline"><TiArrowRight />More</Link>
+  <div key={Index} className='flex flex-wrap justify-center md:flex-nowrap items-center my-10 space-y-10 md:justify-between'>
+    <div className="max-w-[45rem] w-full space-y-5 text-center md:text-start">
+      <h1 className="font-bold text-[1.3rem] sm:text-[1.6rem] xl:text-[2rem]">{assets.heading}</h1>
+      <p className="text-xs leading-5 sm:text-sm">{assets.body}</p>
+      <Link to='/' className="text-blue-500 flex items-center text-sm justify-center md:justify-normal hover:underline"><TiArrowRight />More</Link>
     </div>
     <div className="text-center">
-        <img src={assets.image} alt="WebIllustration"  />
+        <img src={assets.image} alt="WebIllustration" className='max-w-[14rem] sm:max-w-[18rem] lg:max-w-[22rem] xl:max-w-[26rem] 2xl:max-w-[28rem] w-full' />
     </div>
   </div>
   ))}

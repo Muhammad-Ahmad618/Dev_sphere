@@ -22,18 +22,18 @@ export default function ContactUs() {
 
        <form action="" className='flex flex-col items-center py-24'>
            <div className='space-x-1 flex flex-nowrap sm:space-x-4'>
-           <input type="text" name="FirstName" placeholder='First Name' className='bg-transparent border text-sm border-white rounded-md p-2 w-[10rem] sm:w-[19.5rem] custom-width:w-[25rem]'/>
-           <input type="text" name="LastName" placeholder='Last Name' className='bg-transparent border text-sm border-white rounded-md p-2 w-[10rem] sm:w-[19.5rem] custom-width:w-[25rem]'/>
+           <input type="text" name="FirstName" placeholder='First Name' className='bg-transparent text-white border text-sm border-white rounded-md p-2 w-[10rem] sm:w-[19.5rem] custom-width:w-[25rem]'/>
+           <input type="text" name="LastName" placeholder='Last Name' className='bg-transparent text-white border text-sm border-white rounded-md p-2 w-[10rem] sm:w-[19.5rem] custom-width:w-[25rem]'/>
            </div>
            <br />
-           <input type="email" name="email" placeholder='Email Address' className='bg-transparent border text-sm border-white rounded-md p-2 w-[20rem] sm:w-[40rem] min-[885px]:w-[51rem]' />
-           <textarea name="Message" className='bg-transparent border border-white rounded-md text-sm text-gray-400 p-4 my-6 h-48 w-[20rem] sm:w-[40rem] min-[885px]:w-[51rem]'>Message</textarea>
+           <input type="email" name="email" placeholder='Email Address' className='bg-transparent text-white border text-sm border-white rounded-md p-2 w-[20rem] sm:w-[40rem] min-[885px]:w-[51rem]' />
+           <textarea name="Message" className='bg-transparent border border-white text-white rounded-md text-sm text-gray-400 p-4 my-6 h-48 w-[20rem] sm:w-[40rem] min-[885px]:w-[51rem]' placeholder='Message'></textarea>
            <CustomButton label="Send Message"/>
        </form>
 
        <div className='text-white space-y-6 sm:py-10'>
-        <h1 className='text-[2rem] font-bold sm:text-[3rem]'>Rescue Your <span className='text-blue-500'>Company's Growth</span></h1>
-        <p className='text-xs leading-5 sm:text-base'>Let us know about your business plans on an introductory call, and we’ll lead the matching process.</p>
+        <h1 className='text-[1.6rem] sm:text-[2rem] lg:text-[2.5em] font-bold'>Rescue Your <span className='text-blue-500'>Company's Growth</span></h1>
+        <p className='text-xs leading-5 sm:text-sm'>Let us know about your business plans on an introductory call, and we’ll lead the matching process.</p>
         <CustomButton label="Hire a Pro"/>
        </div>
         </div>

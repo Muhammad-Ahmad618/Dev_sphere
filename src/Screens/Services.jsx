@@ -7,7 +7,7 @@ import CoverService from "../Services_comp/CoverService";
 
 export default function Services() {
   return (
-    <div className="bg-gray-900 min-h-screen pb-3">
+    <div className="bg-gray-900 min-h-screen">
       <Navbar />
       <div className="text-white mx-7 sm:mx-14 xl:mx-24">
          <CoverService 
@@ -20,11 +20,11 @@ export default function Services() {
         ButtonLabel2="Contact Us"
         />
 
-        <div className="py-28 text-center lg:text-start">
-          <h1 className="text-[2rem] font-bold sm:text-[3rem]">
+        <div className="py-16 sm:py-28 text-center lg:text-start">
+          <h1 className="text-[1.8rem] sm:text-[2.2rem] lg:text-[2.5em] 2xl:text-[2.8rem] font-bold pb-5">
             Our <span className="text-blue-500">Services</span>
           </h1>
-          <p className="text-xs text-white leading-5 sm:text-base">
+          <p className="text-xs text-white leading-5 sm:text-sm">
             All of your software development needs are met under one roof at
             DevSphere thanks to our top-notch technical expertise and
             proactive attitude. With the appropriate mix of designers,<br/>

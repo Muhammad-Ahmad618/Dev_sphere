@@ -60,7 +60,7 @@ export default function Portfolio() {
 
             <li className={`py-3 px-2 cursor-pointer sm:py-3 sm:px-7  md:py-5 md:px-10 ${tab === 3 ? "bg-blue-600" : "hover:bg-blue-500"} `} 
             onClick={ ()=> toggleTab(3) }>App Dev</li>
-            <li className={`py-3 px-2 cursor-pointer rounded-e-full sm:py-3 sm:px-7 md:py-5 md:px-10 ${tab === 4 ? "bg-blue-600" : "hover:bg-blue-500"}`}
+            <li className={`py-3 px-2 cursor-pointer rounded-e-full flex-1 sm:py-3 sm:px-7 md:py-5 md:px-10 ${tab === 4 ? "bg-blue-600" : "hover:bg-blue-500"}`}
             
             onClick={ ()=> toggleTab(4) }>
               DevOps Solutions
@@ -77,50 +77,50 @@ export default function Portfolio() {
             </div>
         </div>
 
-        <div className={tab === 1 ? "flex flex-wrap justify-evenly":"hidden"}>
+        <div className={tab === 1 ? "flex gap-x-10 justify-evenly":"hidden"}>
           <div className="space-y-20 mb-20 sm:mb-0">
-            <img src={WebImage1} alt="Web1" className='w-[20rem] sm:w-[16rem] min-[880px]:w-[20rem] lg:w-[26rem] xl:w-[36rem] 2xl:w-full' />
-            <img src={WebImage2} alt="Web2" className='w-[20rem] sm:w-[16rem] min-[880px]:w-[20rem] lg:w-[26rem] xl:w-[36rem] 2xl:w-full' />
+            <img src={WebImage1} alt="Web1" className='max-w-[36rem] w-full' />
+            <img src={WebImage2} alt="Web2" className='max-w-[36rem] w-full' />
           </div>
           <div className="space-y-20">
-            <img src={WebImage3} alt="Web3" className='w-[20rem] sm:w-[16rem] min-[880px]:w-[20rem] lg:w-[26rem] xl:w-[36rem] 2xl:w-full' />
-            <img src={WebImage4} alt="Web4" className='w-[20rem] sm:w-[16rem] min-[880px]:w-[20rem] lg:w-[26rem] xl:w-[36rem] 2xl:w-full'/>
+            <img src={WebImage3} alt="Web3" className='max-w-[36rem] w-full' />
+            <img src={WebImage4} alt="Web4" className='max-w-[36rem] w-full'/>
           </div>
         </div>
 
-        <div className={tab === 2 ? "flex flex-wrap justify-evenly":"hidden"}>
+        <div className={tab === 2 ? "flex gap-x-10 justify-evenly":"hidden"}>
           <div className="space-y-20 ">
-            <img src={AppImage1} alt="App1" className='w-[20rem] md:w-[23rem] lg:w-[26rem] 2xl:w-full' />
-            <img src={AppImage2} alt="App2" className='w-[20rem] md:w-[23rem] lg:w-[26rem] 2xl:w-full' />
+            <img src={AppImage1} alt="App1" className='max-w-[36rem] w-full' />
+            <img src={AppImage2} alt="App2" className='max-w-[36rem] w-full' />
           </div>
 
           <div className="space-y-20">
-            <img src={AppImage3} alt="App3" className='w-[20rem] md:w-[23rem] lg:w-[26rem] 2xl:w-full'/>
-            <img src={AppImage4} alt="App4" className='w-[20rem] md:w-[23rem] lg:w-[26rem] 2xl:w-full'/>
-          </div>
-        </div>
-
-        <div className={tab === 3 ? "flex flex-wrap justify-evenly":"hidden"}>
-          <div className="space-y-20">
-            <img src={UxImage1} alt="Ux1" className='w-[20rem] md:w-[23rem] lg:w-[26rem] 2xl:w-full'/>
-            <img src={UxImage2} alt="Ux2" className='w-[20rem] md:w-[23rem] lg:w-[26rem] 2xl:w-full'/>
-          </div>
-
-          <div className="space-y-20">
-            <img src={UxImage3} alt="Ux3" className='w-[20rem] md:w-[23rem] lg:w-[26rem] 2xl:w-full'/>
-            <img src={UxImage4} alt="Ux4" className='w-[20rem] md:w-[23rem] lg:w-[26rem] 2xl:w-full'/>
+            <img src={AppImage3} alt="App3" className='max-w-[36rem] w-full'/>
+            <img src={AppImage4} alt="App4" className='max-w-[36rem] w-full'/>
           </div>
         </div>
 
-        <div className={tab === 4 ? "flex flex-wrap justify-evenly":"hidden"}>
+        <div className={tab === 3 ? "flex gap-x-10 justify-evenly":"hidden"}>
           <div className="space-y-20">
-            <img src={DevOpsImage1} alt="DevOps1" className='w-[20rem] md:w-[23rem] lg:w-[26rem] xl:w-full'/>
-            <img src={DevOpsImage2} alt="DevOps2" className='w-[20rem] md:w-[23rem] lg:w-[26rem] xl:w-full'/>
+            <img src={UxImage1} alt="Ux1" className='max-w-[36rem] w-full'/>
+            <img src={UxImage2} alt="Ux2" className='max-w-[36rem] w-full'/>
           </div>
 
           <div className="space-y-20">
-            <img src={DevOpsImage3} alt="DevOps3" />
-            <img src={DevOpsImage4} alt="DevOps4" />
+            <img src={UxImage3} alt="Ux3" className='max-w-[36rem] w-full'/>
+            <img src={UxImage4} alt="Ux4" className='max-w-[36rem] w-full'/>
+          </div>
+        </div>
+
+        <div className={tab === 4 ? "flex gap-x-10 justify-evenly":"hidden"}>
+          <div className="space-y-20">
+            <img src={DevOpsImage1} alt="DevOps1" className='max-w-[36rem] w-full'/>
+            <img src={DevOpsImage2} alt="DevOps2" className='max-w-[36rem] w-full'/>
+          </div>
+
+          <div className="space-y-20">
+            <img src={DevOpsImage3} alt="DevOps3" className='max-w-[36rem] w-full'/>
+            <img src={DevOpsImage4} alt="DevOps4" className='max-w-[36rem] w-full'/>
           </div>
         </div>
       </div>

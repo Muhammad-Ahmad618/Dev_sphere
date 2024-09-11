@@ -7,18 +7,18 @@ import Footer from "../LandingPageComponents/Footer"
 
 export default function About() {
   return (
-    <div className="bg-gray-900 min-h-screen pb-3">
+    <div className="bg-gray-900 min-h-screen ">
       <Navbar />
 
       <div className="text-white mx-7 sm:mx-14 xl:mx-24">
         <div className="pt-28 pb-5">
-          <h1 className="text-[2rem] font-bold sm:text-[3rem]">
+          <h1 className="font-bold text-[1.8rem] sm:text-[2.2rem] lg:text-[2.5em] 2xl:text-[2.8rem]">
             About <span className="text-blue-500">Us</span>
           </h1>
-          <h3 className="text-[1.3rem] sm:text-[1.8rem]">
+          <h3 className="text-[1rem] sm:text-[1.2rem] lg:text-[1.6rem]">
             The Best DevSphere Technology with Five Years of Experience
           </h3>
-          <p className="text-xs leading-5 pt-8 md:pt-16 sm:text-base">
+          <p className="text-xs sm:text-sm leading-10 pt-5 md:pt-12">
             At DevSphere, we are the architects of technological innovation,
             crafting solutions that propel businesses into the digital age with
             seamless precision. Specializing in a diverse array of technical
@@ -43,40 +43,40 @@ export default function About() {
         </div>
         <div className="py-10 flex flex-wrap gap-5 lg:gap-x-14">
           <div className="flex items-center gap-4">
-            <img src={verifiedIcon} alt="verified" className="w-[1.3rem] sm:w-[2.5rem]" />
-            <h4 className="text-sm font-medium sm:text-lg">
+            <img src={verifiedIcon} alt="verified" className="w-[1.3rem] sm:w-[1.8rem] lg:w-[2.5rem]" />
+            <h4 className="text-sm sm:text-base font-medium lg:text-lg">
               Best in Industry
             </h4>
           </div>
           <div className="flex items-center gap-4">
-            <img src={verifiedIcon} alt="verified" className="w-[1.3rem] sm:w-[2.5rem]" />
-            <h4 className="text-sm font-medium sm:text-lg">24/7 Support</h4>
+            <img src={verifiedIcon} alt="verified" className="w-[1.3rem] sm:w-[1.8rem] lg:w-[2.5rem]" />
+            <h4 className="text-sm sm:text-base font-medium lg:text-lg">24/7 Support</h4>
           </div>
           <div className="flex items-center gap-4">
-            <img src={verifiedIcon} alt="verified" className="w-[1.3rem] sm:w-[2.5rem]" />
-            <h4 className="text-sm font-medium sm:text-lg">
+            <img src={verifiedIcon} alt="verified" className="w-[1.3rem] sm:w-[1.8rem] lg:w-[2.5rem]" />
+            <h4 className="text-sm sm:text-base font-medium lg:text-lg">
               Professional Staff
             </h4>
           </div>
           <div className="flex items-center gap-4">
-            <img src={verifiedIcon} alt="verified" className="w-[1.3rem] sm:w-[2.5rem]" />
-            <h4 className="text-sm font-medium sm:text-lg">Fair Prices</h4>
+            <img src={verifiedIcon} alt="verified" className="w-[1.3rem] sm:w-[1.8rem] lg:w-[2.5rem]" />
+            <h4 className="text-sm sm:text-base font-medium lg:text-lg">Fair Prices</h4>
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <img src={contactIcon} alt="contact" className="w-[1.3rem] sm:w-[2.5rem]" />
+          <img src={contactIcon} alt="contact" className="w-[1.3rem] sm:w-[1.8rem] lg:w-[2.5rem]" />
           <div>
-            <p className="text-sm sm:text-base">Call to ask any questions</p>
-            <h4 className="text-blue-500 font-medium text-xs sm:text-base">+1347-350-0868</h4>
+            <p className="text-xs sm:text-sm xl:text-base">Call to ask any questions</p>
+            <h4 className="text-blue-500 text-sm sm:text-base font-medium lg:text-lg">+1347-350-0868</h4>
           </div>
         </div>
 
-        <div className="my-12">
-          <h1 className="text-[2rem] font-bold sm:text-[3rem]">
+        <div className="my-16">
+          <h1 className="font-bold text-[1.6rem] sm:text-[2rem] lg:text-[2.5em]">
             Rescue Your{" "}
             <span className="text-blue-500">Company's Growth</span>
           </h1>
-          <p className="text-xs leading-5 sm:text-base pb-10">
+          <p className="text-xs sm:text-sm leading-5 py-5 ">
             Let us know about your business plans on an introductory call, and
             we’ll lead the matching process.
           </p>
