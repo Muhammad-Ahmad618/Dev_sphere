@@ -1,21 +1,21 @@
 import React from "react";
-import Navbar from "../LandingPageComponents/Navbar";
-import ServiceFeature from "../LandingPageComponents/ServiceFeature";
+import Navbar from "../Components/Navbar";
+import ServiceFeature from "../Components/ServiceFeature";
 import CoverImage from "../Assets/image1.png";
 import CoverImage2 from "../Assets/Cover2.png";
-import ServiceFeature2 from "../LandingPageComponents/ServiceFeature2";
-import ServiceFeature3 from "../LandingPageComponents/ServiceFeature3";
-import ServiceCards from "../LandingPageComponents/ServiceCards";
-import ExpertiseSection from "../LandingPageComponents/ExpertiseSection";
+import ServiceFeature2 from "../Components/ServiceFeature2";
+import ServiceFeature3 from "../Components/ServiceFeature3";
+import ServiceCards from "../Components/ServiceCards";
+import ExpertiseSection from "../Components/ExpertiseSection";
 import CoverImage3 from "../Assets/cover3.png";
 import CoverImage4 from "../Assets/Cover4.png";
 import CoverImage5 from "../Assets/Cover5.png";
 import Icon1 from "../Assets/icon5.png";
 import Icon2 from "../Assets/icon6.png";
 import CompanyLogo from "../Assets/companyLogo.png";
-import CoreTechTab from "../LandingPageComponents/CoreTechTab";
-import CompanyFeatureCard from "../LandingPageComponents/CompanyFeatureCard";
-import Footer from "../LandingPageComponents/Footer";
+import CoreTechTab from "../Components/CoreTechTab";
+import CompanyFeatureCard from "../Components/CompanyFeatureCard";
+import Footer from "../Components/Footer";
 
 export default function LandingPage() {
   return (
@@ -26,12 +26,16 @@ export default function LandingPage() {
           Image={CoverImage}
           button1="Portfolio"
           button2="Contact Us"
+          path1 = "/Portfolio"
+          path2 = "/ContactUs"
         />
         <div>
           <ServiceFeature2
             Image={CoverImage2}
             button1="Who are We ?"
             button2="Portfolio"
+            path1 = "/About"
+          path2 = "/Portfolio"
           />
         </div>
         <div>
@@ -125,6 +129,7 @@ company website."
               heading="Dedicated Hiring"
               body="By choosing, employing, and managing highly qualified software developers and IT specialists on a long-term basis, you may create your own team. In order to achieve agile software development, this approach is meant to assist you in locating and enlisting specialized personnel who possess the necessary skills and cultural fit."
               label="Contact Expert"
+              path = "/ContactUs"
             />
 
             <CompanyFeatureCard
@@ -133,6 +138,7 @@ company website."
               body="The greatest software development professionals are available to you through our project-based approach, which is often offered at a fixed fee. With the aid of this approach, a customer and our IT experts working on a particular project should be able to communicate effectively and quickly."
               label="Get a Quote"
               varient="transparent"
+              path = "/ContactUs"
             />
           </div>
         </div>

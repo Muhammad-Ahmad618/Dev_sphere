@@ -1,6 +1,6 @@
 import React , {useState} from "react";
-import Navbar from "../LandingPageComponents/Navbar";
-import CoverService from "../Services_comp/CoverService";
+import Navbar from "../Components/Navbar";
+import CoverService from "../Components/CoverService";
 import CoverImage from "../Assets/Cover12.png";
 import WebImage1 from "../Assets/Web/Rectangle 46.png";
 import WebImage2 from "../Assets/Web/Rectangle 47.png";
@@ -18,7 +18,8 @@ import DevOpsImage1 from "../Assets/DevOps/Rectangle 90.png";
 import DevOpsImage2 from "../Assets/DevOps/Rectangle 91.png";
 import DevOpsImage3 from "../Assets/DevOps/Rectangle 92.png";
 import DevOpsImage4 from "../Assets/DevOps/Rectangle 93.png";
-import Footer from "../LandingPageComponents/Footer";
+import Footer from "../Components/Footer";
+import { useNavigate } from 'react-router-dom';
 
 export default function Portfolio() {
 
@@ -28,8 +29,15 @@ export default function Portfolio() {
 
      setTab(id)
 
-  }            
+  }           
 
+  
+  const navigate = useNavigate()
+
+  const handleClick = (path) =>{
+   navigate(path)
+  }
+  
   return (
     <div className="bg-gray-900 min-h-screen pb-2">
       <Navbar />
@@ -41,6 +49,7 @@ export default function Portfolio() {
            and mobile applications"
           image={CoverImage}
           ButtonLabel1="Contact Us"
+          path1 = '/ContactUs'
           display="hide"
         />
 
@@ -73,7 +82,7 @@ export default function Portfolio() {
             <div className="space-y-10">
             <h3 className="text-[1.8rem] font-bold text-white">We <span className="text-blue-500">Construct</span> Ideas</h3>
             
-            <button className="bg-blue-500 text-xs text-white py-2 px-10 rounded-full sm:text-base hover:bg-red-500">Lets Talk About Your Project</button>
+            <button className="bg-blue-500 text-xs text-white py-2 px-10 rounded-full sm:text-base hover:bg-blue-700" onClick={() =>{handleClick('/ContactUs')}}>Lets Talk About Your Project</button>
             </div>
         </div>
 

@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../LandingPageComponents/Navbar";
+import Navbar from "../Components/Navbar";
 import Cover6 from "../Assets/Cover6.png";
-import Footer from "../LandingPageComponents/Footer"
-import ServicesOffered from "../Services_comp/Services_Offered";
-import CoverService from "../Services_comp/CoverService";
+import Footer from "../Components/Footer"
+import ServicesOffered from "../Components/Services_Offered";
+import CoverService from "../Components/CoverService";
 
 export default function Services() {
   return (
@@ -18,6 +18,8 @@ export default function Services() {
         image={Cover6}
         ButtonLabel1="Free Quote"
         ButtonLabel2="Contact Us"
+          path1 = "/ContactUs"
+          path2 = "/ContactUs"
         />
 
         <div className="py-16 sm:py-28 text-center lg:text-start">

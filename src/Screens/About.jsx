@@ -1,11 +1,19 @@
 import React from "react";
-import Navbar from "../LandingPageComponents/Navbar";
+import Navbar from "../Components/Navbar";
 import verifiedIcon from "../Assets/verified.png";
 import contactIcon from "../Assets/contact.png";
-import Button from "../LandingPageComponents/Button";
-import Footer from "../LandingPageComponents/Footer"
+import Button from "../Components/Button";
+import Footer from "../Components/Footer"
+import { useNavigate } from 'react-router-dom';
 
 export default function About() {
+
+  const navigate = useNavigate()
+
+  const handleClick = (path) =>{
+   navigate(path)
+  }
+
   return (
     <div className="bg-gray-900 min-h-screen ">
       <Navbar />
@@ -80,7 +88,7 @@ export default function About() {
             Let us know about your business plans on an introductory call, and
             we’ll lead the matching process.
           </p>
-          <Button label="Hire a Pro" />
+          <Button label="Hire a Pro" onClick={() => {handleClick("/ContactUs")}} />
         </div>
       </div>
     <Footer/>

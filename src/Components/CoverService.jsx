@@ -1,7 +1,16 @@
 import React from 'react'
-import CustomBtn from "../LandingPageComponents/Button";
+import CustomBtn from "./Button";
+import { useNavigate } from 'react-router-dom';
 
-export default function CoverService({heading1, heading2, body, image,  ButtonLabel1, ButtonLabel2, display}) {
+export default function CoverService({heading1, heading2, body, image,  ButtonLabel1, ButtonLabel2, display, path1, path2}) {
+
+  const navigate = useNavigate()
+
+  const handleClick = (path) =>{
+   navigate(path)
+  }
+
+
   return (
     <>
     <div className='flex flex-wrap justify-center md:flex-nowrap items-center mt-28 space-y-10 md:justify-between'>
@@ -15,7 +24,7 @@ export default function CoverService({heading1, heading2, body, image,  ButtonLa
             <h3 className=" text-white text-[1rem] sm:text-[1.2rem] lg:text-[1.4rem] 2xl:text-[1.8rem]">
               {heading2}
             </h3>
-            <p className="text-white text-xs sm:text-sm">
+            <p className="text-white text-xs sm:text-sm leading-8">
               {body}
             </p>
           </div>
@@ -28,8 +37,8 @@ export default function CoverService({heading1, heading2, body, image,  ButtonLa
           </div>
         </div>
         <div className='flex space-x-5 py-5 justify-center md:justify-normal'>
-          <CustomBtn label={ButtonLabel1} />
-          <CustomBtn label={ButtonLabel2} varient="transparent" varient2={display} />
+          <CustomBtn label={ButtonLabel1} onClick={() => {handleClick(path1)}}/>
+          <CustomBtn label={ButtonLabel2} varient="transparent" varient2={display} onClick={() => {handleClick(path2)}}/>
         </div>
     </>
   )

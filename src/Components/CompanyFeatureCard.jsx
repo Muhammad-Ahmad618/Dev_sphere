@@ -1,7 +1,15 @@
 import React from 'react'
 import CustomBtn from './Button'
+import { useNavigate } from 'react-router-dom';
 
 export default function CompanyFeatureCard(props) {
+
+  const navigate = useNavigate()
+
+  const handleClick = (path) =>{
+   navigate(path)
+  }
+
   return (
     <>
 
@@ -10,7 +18,7 @@ export default function CompanyFeatureCard(props) {
             <h1 className='text-xl font-semibold text-blue-500'>{props.heading}</h1>
             <p className='text-xs leading-5 sm:text-sm'>{props.body}</p>
             <div className='flex justify-center md:block'>
-            <CustomBtn label={props.label} varient={props.varient}/>
+            <CustomBtn label={props.label} varient={props.varient} onClick={() => {handleClick(props.path)}}/>
             </div>
         </div>
         <div>

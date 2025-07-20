@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../LandingPageComponents/Navbar'
-import CoverService from '../Services_comp/CoverService'
+import Navbar from '../Components/Navbar'
+import CoverService from '../Components/CoverService'
 import CoverImage from '../Assets/Cover11.png'
-import CustomButton from '../LandingPageComponents/Button'
-import Footer from '../LandingPageComponents/Footer'
+import CustomButton from '../Components/Button'
+import Footer from '../Components/Footer'
 
 export default function ContactUs() {
   return (
@@ -14,7 +14,7 @@ export default function ContactUs() {
         heading1="Contact Us"
         heading2="Our work performs as it sees"
         body="We create beautiful, interesting, and responsive web
-        and mobile applications"
+        and mobile applications, If you have any questions or want to request a quotation please reach out to us, We'll be happy to assist you"
        image={CoverImage}
        ButtonLabel1="Contact Us"
        display="hide"
@@ -27,15 +27,9 @@ export default function ContactUs() {
            </div>
            <br />
            <input type="email" name="email" placeholder='Email Address' className='bg-transparent text-white border text-sm border-white rounded-md p-2 w-[20rem] sm:w-[40rem] min-[885px]:w-[51rem]' />
-           <textarea name="Message" className='bg-transparent border border-white text-white rounded-md text-sm text-gray-400 p-4 my-6 h-48 w-[20rem] sm:w-[40rem] min-[885px]:w-[51rem]' placeholder='Message'></textarea>
+           <textarea name="Message" className='bg-transparent border border-white text-white rounded-md text-sm p-4 my-6 h-48 w-[20rem] sm:w-[40rem] min-[885px]:w-[51rem]' placeholder='Message'></textarea>
            <CustomButton label="Send Message"/>
        </form>
-
-       <div className='text-white space-y-6 sm:py-10'>
-        <h1 className='text-[1.6rem] sm:text-[2rem] lg:text-[2.5em] font-bold'>Rescue Your <span className='text-blue-500'>Company's Growth</span></h1>
-        <p className='text-xs leading-5 sm:text-sm'>Let us know about your business plans on an introductory call, and we’ll lead the matching process.</p>
-        <CustomButton label="Hire a Pro"/>
-       </div>
         </div>
         <Footer/>
     </div>

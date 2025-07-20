@@ -19,8 +19,8 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="bg-blue-600 w-full rounded-t-md">
-          <div className="flex p-10 justify-evenly gap-7 ">
+        <div className="bg-gradient-to-r from-blue-600 to-blue-300 w-full rounded-t-md flex flex-col justify-around">
+          <div className="flex p-10 sm:justify-evenly gap-7 flex-wrap justify-start">
             <div className="text-white space-y-5">
               <h2 className="text-base font-semibold sm:text-xl">Get In Touch</h2>
 
@@ -39,25 +39,19 @@ export default function Footer() {
                 <li>About Us</li>
                 <li>Our Services</li>
                 <li>Contact Us</li>
-                <li>Term and Conditions</li>
-                <li>Privact Policy</li>
               </ul>
             </div>
 
-            <div className="text-white space-y-5 hidden sm:block">
+            <div className="text-white space-y-5 block">
               <h2 className="text-xl font-semibold">Popular Links</h2>
               <ul className="space-y-2 text-sm">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Our Services</li>
-                <li>Contact Us</li>
                 <li>Term and Conditions</li>
                 <li>Privact Policy</li>
               </ul>
             </div>
           </div>
           <div className="text-center">
-          <a href='/' className="text-white text-xs sm:text-sm" >&copy; <span className="underline">DevSphere</span>. All Rights Reserved</a>
+          <a href='/' className="text-white text-xs sm:text-sm cursor-pointer hover:underline" >&copy;2025 <span>DevSphere</span>. All Rights Reserved</a>
           </div>
         </div>
        

@@ -1,7 +1,16 @@
 import React from 'react'
 import CustomBtn from './Button'
+import { useNavigate } from 'react-router-dom';
 
-export default function ServiceFeature({Image, button1, button2}) {
+export default function ServiceFeature({Image, button1, button2, path1, path2}) {
+
+  const navigate = useNavigate()
+
+  const handleClick = (path) =>{
+   navigate(path)
+  }
+
+
   return (
     <>
    
@@ -18,8 +27,8 @@ export default function ServiceFeature({Image, button1, button2}) {
         </div>
     </div>
     <div className='flex space-x-5 py-10 justify-center md:justify-normal'>
-     <CustomBtn label={button1}/>
-     <CustomBtn label={button2} varient="transparent"/>
+     <CustomBtn label={button1} onClick={() => {handleClick(path1)}} />
+     <CustomBtn label={button2} varient="transparent" onClick={() => {handleClick(path2)}}/>
      </div>
      
     </>
